@@ -1,0 +1,61 @@
+﻿@page "/"
+
+@inject IDialogService DialogService
+
+<PageTitle>Guess the Number</PageTitle>
+
+<div>
+    <div class="d-flex justify-content-center">
+        <MudText Typo="Typo.h4">Welcome to Guess the Number!</MudText>
+    </div>
+    <div class="d-flex justify-content-center">
+        <MudText Typo="Typo.subtitle1">this project was completed in just one hour!</MudText>
+    </div>
+    <div class="d-flex justify-content-center">
+        <MudText Typo="Typo.subtitle2">by: Toddycs</MudText>
+    </div>
+</div>
+
+
+
+
+<MudLayout>
+    <MudField Variant="Variant.Outlined">
+        <MudGrid>
+            <MudText Style="margin: 7px;" Typo="Typo.body2">Select Game Type</MudText>
+            <MudItem xs="12">
+                <MudSelect Variant="Variant.Outlined" Label="Game Type" T="string" @bind-Value="@GuessType">
+                    @foreach(var game in GameTypeList)
+                    {
+                        <MudSelectItem Value="@(game.AcessKey)">@game.Name</MudSelectItem>
+                    }
+                </MudSelect>
+            </MudItem>
+        </MudGrid>
+
+        @if (!string.IsNullOrEmpty(GuessType))
+        {
+            <MudSpacer />
+            var FindIndex = GameTypeList.FindIndex(e => e.AcessKey == GuessType);
+            <div class="d-flex justify-content-center">
+                <MudText Style="margin: 7px;" Typo="Typo.body1">@GameTypeList[FindIndex].Name Game</MudText>
+            </div>
+
+            @* Integer *@
+            @if(GuessType == "I")
+            {
+                <MudNumericField HideSpinButtons="true" @bind-Value="GuessInt" Label="Guess the Integer" Variant="Variant.Outlined" Min="0" Max="10" />
+            }
+            @* Decimal *@
+            @if (GuessType == "D")
+            {
+                <MudNumericField HideSpinButtons="true" @bind-Value="GuessDecimal" Label="Guess the Decimal" Variant="Variant.Outlined" Step=".1M" />
+
+            }
+        }
+
+        <div class="d-flex justify-content-end">
+            <MudButton Style="margin: 7px;" Variant="Variant.Outlined" Color="Color.Success" OnClick="TryGuess">Try Guess</MudButton>
+        </div>
+    </MudField>
+</MudLayout>
