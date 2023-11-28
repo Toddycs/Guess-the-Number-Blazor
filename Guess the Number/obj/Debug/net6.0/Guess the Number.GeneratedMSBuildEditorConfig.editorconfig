@@ -13,35 +13,35 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Guess_the_Number
 build_property.RootNamespace = Guess_the_Number
-build_property.ProjectDir = C:\Users\nicolas\source\repos\Guess the Number\Guess the Number\
+build_property.ProjectDir = C:\Users\nicolas\Documents\GitHub\Guess the Number\Guess-the-Number-Blazor\Guess the Number\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\nicolas\source\repos\Guess the Number\Guess the Number
+build_property.MSBuildProjectDirectory = C:\Users\nicolas\Documents\GitHub\Guess the Number\Guess-the-Number-Blazor\Guess the Number
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/nicolas/source/repos/Guess the Number/Guess the Number/App.razor]
+[C:/Users/nicolas/Documents/GitHub/Guess the Number/Guess-the-Number-Blazor/Guess the Number/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicolas/source/repos/Guess the Number/Guess the Number/Pages/Index.razor]
+[C:/Users/nicolas/Documents/GitHub/Guess the Number/Guess-the-Number-Blazor/Guess the Number/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicolas/source/repos/Guess the Number/Guess the Number/Shared/DialogBox.razor]
+[C:/Users/nicolas/Documents/GitHub/Guess the Number/Guess-the-Number-Blazor/Guess the Number/Shared/DialogBox.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0JveC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicolas/source/repos/Guess the Number/Guess the Number/Shared/MainLayout.razor]
+[C:/Users/nicolas/Documents/GitHub/Guess the Number/Guess-the-Number-Blazor/Guess the Number/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicolas/source/repos/Guess the Number/Guess the Number/Shared/NavMenu.razor]
+[C:/Users/nicolas/Documents/GitHub/Guess the Number/Guess-the-Number-Blazor/Guess the Number/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicolas/source/repos/Guess the Number/Guess the Number/_Imports.razor]
+[C:/Users/nicolas/Documents/GitHub/Guess the Number/Guess-the-Number-Blazor/Guess the Number/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

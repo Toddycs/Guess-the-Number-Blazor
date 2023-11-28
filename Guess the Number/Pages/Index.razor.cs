@@ -82,14 +82,16 @@ public partial class Index
 
             if(GeneratedNumber == GuessInt)
             {
+                await Alert($"Congratulations, you guessed the number, its {GeneratedNumber}", "Ok, thank you.", Color.Error);
 
             }
             else
             {
+                await Alert($"Oh no... wrong number number, its {GeneratedNumber}", "Ok", Color.Error);
 
             }
-            Console.WriteLine($"DEBUG: Número gerado: {GeneratedNumber} - Número escolhido pelo usuário: {GuessInt}");
 
+            GuessInt = null;
         }
         // Decimal
         else if (GuessType == "D")
@@ -104,13 +106,13 @@ public partial class Index
 
             if (GeneratedNumber == GuessDecimal)
             {
-
+                await Alert($"Congratulations, you guessed the number, its {GeneratedNumber}", "Ok, thank you.", Color.Error);
             }
             else
             {
-
+                await Alert($"Oh no... wrong number number, its {GeneratedNumber}", "Ok", Color.Error);
             }
-            Console.WriteLine($"DEBUG: Número gerado: {GeneratedNumber} - Número escolhido pelo usuário: {GuessDecimal}");
+            GuessDecimal = null;
         }
     }
 
